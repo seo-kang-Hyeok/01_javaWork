@@ -1,0 +1,11 @@
+package test02;
+//자바 빈
+public class Student {
+	privare String stuNo;
+	privare String name;
+	privare int jumsu;
+	privare String address;
+	privare String tel;
+	
+	
+}

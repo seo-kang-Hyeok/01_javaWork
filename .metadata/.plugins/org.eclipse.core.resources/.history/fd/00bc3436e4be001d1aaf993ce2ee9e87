@@ -1,0 +1,14 @@
+package collection.linedList01;
+import java.util.LinkedList;
+
+public class LinkedList2 {
+
+	public static void main(String[] args) {
+		ArrayList al = new ArrayList(2000000);
+		LinkedList ll = new LinkedList();
+		
+		
+		
+	}
+
+}

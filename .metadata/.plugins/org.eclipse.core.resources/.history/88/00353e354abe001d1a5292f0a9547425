@@ -1,0 +1,19 @@
+package day17과제;
+
+public class Divisor {
+	int a ;
+	int b ;
+	
+	public void div(int num1,int num2){
+		this.a = num1;
+		this.b = num2;
+		
+		System.out.print(a+ "의 약수는 ");
+		for (int i = 1; i <= a; i++) {
+				if (a % i == 0) {
+					System.out.print(i + ",");
+					}
+		}
+		System.out.print("입니다.");
+	}
+}

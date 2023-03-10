@@ -1,0 +1,42 @@
+package day17과제;
+
+import java.util.Scanner;
+
+public class NumTest{
+	
+	public static void main(String[] args) {
+		Lcm lcm = new Lcm();
+		Divisor div = new Divisor();
+		Gcd gcd = new Gcd();
+		Scanner sc = new Scanner(System.in);
+		int start;
+		
+		while (start != 0) {
+			System.out.println(" 실행코드를 입력하세요.1:약수 2:최소공배수 3.최대공약수 0.종료 ");
+			 start = sc.nextInt();
+			System.out.println("1:약수 2:최소공배수 3.최대공약수");
+			start = sc.nextInt();
+			
+			if(start == 1) {
+				System.out.println("약수를 구하고자 하는 숫자를 입력하세요. : ");
+				int num1 = sc.nextInt();
+				div.div(num1);
+			}	
+			if(start == 2) {
+				System.out.println("1번 숫자를 입력하세요. : ");
+				int num1 = sc.nextInt();
+				System.out.println(" 2번 숫자를 입력하세요. : ");
+				int num2 = sc.nextInt();
+				lcm.lcm(num1,num2);
+			}	
+			if(start == 3) {
+				System.out.println("1번 숫자를 입력하세요. : ");
+				int num1 = sc.nextInt();
+				System.out.println(" 2번 숫자를 입력하세요. : ");
+				int num2 = sc.nextInt();
+				gcd.gcd(num1,num2);
+			}	
+		}
+		System.out.println("시스템을 종료합니다.");
+	}
+}

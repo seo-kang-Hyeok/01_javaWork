@@ -1,0 +1,16 @@
+package calendar01;
+
+import java.util.Calendar;
+
+public class Calendar03 {
+
+	public static void main(String[] args) {
+		Calendar date1 = Calendar.getInstance();
+		date1.set(2022, 3, 10);
+		System.out.println(date1.toString())
+		
+		
+		
+	}
+
+}

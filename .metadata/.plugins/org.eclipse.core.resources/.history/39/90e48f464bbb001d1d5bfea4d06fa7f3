@@ -1,0 +1,13 @@
+
+public class _Quiz_05 {
+
+	public static void main(String[] args) {
+		String[10] shoes =new String[10];
+
+		for(i=0; i <s
+		
+		
+		
+	}
+
+}

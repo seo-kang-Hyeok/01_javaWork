@@ -1,0 +1,38 @@
+package _01_1stringMethod;
+
+public class __06_StringEx7 {
+
+	public static void main(String[] args) {
+		//substring(시작index, 끝index) : 시작index ~ 끝index-1 
+		//Substring(시작index) : 시작index부터 끝까지
+		String str = "공공데이터 융합 웹 애플리케이션 개발자 양성과정2";
+		System.out.println(str.substring(6,8));
+		System.out.println(str.substring(9));
+		
+		//		or 따로 저장해두고 출력하고 싶다?
+		String subStr = str.substring(6,8);
+		System.out.println(subStr);
+		
+//		문제
+//		나이 생일 성별 출력/
+		
+		String sn ="041121-3789760";
+
+		switch (sn.charAt(7)) {
+		case '1' : case '3' : 
+			System.out.println("남자입니다.");
+			break;
+		case '2' : case '4' :
+			System.out.println("여자입니다.");
+			break;
+		}
+		String year = sn.substring(0,2);
+		
+		
+		String month = sn.substring(2,4);
+		String Day = sn.substring(4, 6);
+		
+		System.out.println("생일은"+month+"월"+Day+"일 입니다.");
+	}
+
+}

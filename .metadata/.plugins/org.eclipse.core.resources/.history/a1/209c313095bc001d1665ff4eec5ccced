@@ -1,0 +1,15 @@
+package byteStream02;
+
+public class ByteStreamTest {
+	
+//	스트림(통로)의 특징
+//		- 단방향 : 입력 / 출력이 따로 존
+//		- 선입선출(FIFO) : 먼저 입력된 값이 먼저 출력됨.
+	
+	
+	public static void main(String[] args) {
+		ByteStreamAPI bs = new ByteStreamAPI();
+		bs.fileSave();
+				
+	}
+}

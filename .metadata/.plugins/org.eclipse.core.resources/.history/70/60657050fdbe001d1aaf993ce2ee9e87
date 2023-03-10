@@ -1,0 +1,29 @@
+package collection.hashSet02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class HashSet02 {
+	
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<>();
+		set.add("JAVA");
+		set.add("HTML");
+		set.add("JSP");
+		set.add("JAVA");
+		set.add("ORACLE");
+
+		System.out.println("size : " +set.size());
+		
+		set.remove("HTML");
+		set.remove("ORACLE");
+		System.out.print(set.iterator());
+	}
+	static void iteratorPrint(Iterator<String> i) { //반복되는 출력 메서드로 만들어버리자.
+	while(i.hasNext()) {
+		System.out.print(i + " ");
+		}
+		System.out.println();
+	}
+}

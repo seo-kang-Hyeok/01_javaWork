@@ -1,0 +1,23 @@
+package decimalFormat01;
+
+import java.text.DecimalFormat;
+
+public class DecimalFormat1 {
+	public static void main(String[] args) {
+		double number = 1234567.89;
+		DecimalFormat df = new DecimalFormat("0"); //1자리는 나와야 한다는 뜻?
+		System.out.println(df.format(number));//number의 문자를 df타입으로 출력하시오.
+		
+		//위의 2줄을 한줄로 하면
+		System.out.println(new DecimalFormat("0").format(123.789));
+		
+		System.out.println("-------------------------------------");
+		
+		System.out.println(new DecimalFormat("0").format(number));
+		System.out.println(new DecimalFormat("#").format(number));
+		System.out.println(new DecimalFormat("0.0").format(number)); //정수 1자리 이자 소수점 1자리 출력
+
+		
+	}
+
+}

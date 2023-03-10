@@ -1,0 +1,26 @@
+package day17과제;
+
+public class 약수 {
+//	 int num1;
+//	 int num2;
+	public static void main(String[] args) {
+//	public 약수(int a,int b) {
+		int num1 = 24;
+		int num2 = 30;
+		
+		///약수 구하는공식
+		//주여진 수를 1부터 본인수까지 나눠서 나머지가 0 이면 되는거잖아
+		for (int i = 1; i <= num1; i++) {
+			System.out.print("입력된 값의 A의 약수는");
+				if (num1 % i == 0) {
+					System.out.print(i + ",");
+					}
+		}
+				for (int j = 1; j <= num2; j++) {
+					System.out.print("입력된 값의 B의 약수는");
+			if (num2 % j == 0) {
+				System.out.println(j + ",");
+			}
+		} 
+	}
+}

@@ -1,0 +1,33 @@
+package collection.hashSet02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class person {
+	String name;
+	int age;
+	public person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+}
+public class HashSet3 {
+	public static void main(String[] args) {
+		Set<person> set = new HashSet<person>();
+		
+		set.add(new person("홍길동", 20));
+		set.add(new person("홍길동", 20));
+		
+		System.out.println("size : " + set.size());
+		iteratorPrint(set.iterator());
+		System.out.println();
+		
+	}
+	static void iteratorPrint(Iterator<person> i) { //반복되는 출력 메서드로 만들어버리자.
+	while(i.hasNext()) {
+		System.out.print(i + " ");
+		}
+		System.out.println();
+	
+}

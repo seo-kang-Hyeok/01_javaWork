@@ -1,0 +1,60 @@
+package day17과제;
+
+import java.util.Scanner;
+
+public class NumTest{
+	
+	public static void main(String[] args) {
+		Lcm lcm = new Lcm();
+		Divisor Div = new Divisor();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println(" 실행코드를 입력하세요. : ");
+		int start = sc.nextInt();
+			if(start ==0) {
+				System.out.println("시스템을 종료합니다.");
+				System.exit(0);
+			}	
+		System.out.println("1번 숫자를 입력하세요. : ");
+		int num1 = sc.nextInt();
+		System.out.println(" 2번 숫자를 입력하세요. : ");
+		int num2 = sc.nextInt();
+		
+			switch (start) {
+			case 1: {
+				
+				System.out.print(num1+ "의 약수는 ");
+				for (int i = 1; i <= num1; i++) {
+						if (num1 % i == 0) {
+							System.out.print(i + ",");
+							}
+				}
+				System.out.print("입니다.");
+				break;
+			}
+			case 2: {
+				int min = (num1 < num2) ? num1 : num2;   // 참이면 a이고 아니면 b 인거지.
+				int gcd = 0;
+					for (int i = 1; i <= min; i++) {
+						if (num1 % i == 0 && num2 % i == 0)
+							gcd = i;
+			}
+			System.out.println(num1+" 와 "+ num2 + " 의 최소공배수 : " + num1 * num2 / gcd);
+				break;
+			}
+			case 3: {
+				int min = (num1 < num2) ? num1 : num2;   
+				int gcd = 0;
+					for (int i = 1; i <= min; i++) {
+						if (num1 % i == 0 && num2 % i == 0)
+							gcd = i;
+			}
+			System.out.println(num1+" 와 "+ num2 + " 최대공약수 : " + gcd);
+				break;	
+			}
+			
+		}	
+		
+	}
+}

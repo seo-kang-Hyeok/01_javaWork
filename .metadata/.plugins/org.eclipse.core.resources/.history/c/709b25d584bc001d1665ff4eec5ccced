@@ -1,0 +1,47 @@
+package decimalFormat01;
+
+import java.text.DecimalFormat;
+
+public class DecimalFormat1 {
+	public static void main(String[] args) {
+		double number = 1234567.89;
+		DecimalFormat df = new DecimalFormat("0"); //1자리는 나와야 한다는 뜻?
+		System.out.println(df.format(number));//12345678 number의 문자를 df타입으로 출력하시오.
+		
+		//위의 2줄을 한줄로 하면
+		System.out.println(new DecimalFormat("0").format(123.789)); //124
+		
+		System.out.println("-------------------------------------");
+		
+		System.out.println(new DecimalFormat("0").format(number)); //12345678
+		System.out.println(new DecimalFormat("#").format(number)); //12345678
+		System.out.println(new DecimalFormat("0.0").format(number)); //정수 1자리 이상 소수점 1자리 출력
+		System.out.println(new DecimalFormat("0.00").format(number)); //정수 1자리 이상 소수점 2자리 출력
+		System.out.println("-------------------------------------");
+		
+		number = 1234567.0;
+		System.out.println(new DecimalFormat("0.0").format(number)); //1234567.0 해당 자리수 무조건 출력
+		System.out.println(new DecimalFormat("#.#").format(number)); //1234567 있으면 출력 없으면 출력하지 않음
+		System.out.println("-------------------------------------");
+
+		number = 1234567.89;
+		System.out.println(new DecimalFormat("00000000000.0").format(number));
+		System.out.println(new DecimalFormat("###########.#").format(number));
+		System.out.println("-------------------------------------");
+
+		number = -1234567.89; 
+		System.out.println(new DecimalFormat("#.#-").format(number));
+		System.out.println(new DecimalFormat("#.#").format(number));//양수이면 +기호를 음수이면-기호를 !
+		System.out.println(new DecimalFormat("+#.#;-#.#").format(number));//양수이면 +기호를 음수이면-기호를 !
+		//문자열 - or + 기호를 붙히는 것이라 음수가 양수가 되고 양수가 음수가 되진 않습니다.
+		System.out.println("-------------------------------------");
+		
+		//3자리 마다 ,를 찍고 싶다.		
+		System.out.println(new DecimalFormat("#,###.#").format(number));
+		//4자리 마다 ,를 찍고 싶다.
+		System.out.println(new DecimalFormat("#,#####.#").format(number));
+		//3자리 마다 ,를 찍고 음수면 - 양수면 + 를 붙혀라
+		System.out.println(new DecimalFormat("+#,###.#;-#,###.#").format(number));
+	}
+
+}

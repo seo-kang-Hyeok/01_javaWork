@@ -1,0 +1,22 @@
+package day17과제;
+import java.util.Scanner;
+
+public class Divisor {
+	Scanner sc = new Scanner(System.in);
+	int a ;
+
+	public void div(){
+		
+		System.out.println("약수를 구하고자 하는 숫자를 입력하세요. : ");
+		int num1 = sc.nextInt();
+		this.a = num1;
+
+		System.out.print(a+ "의 약수는 ");
+		for (int i = 1; i <= a; i++) {
+				if (a % i == 0) {
+					System.out.print(i + ",");
+					}
+		}
+		System.out.println("입니다.");
+	}
+}

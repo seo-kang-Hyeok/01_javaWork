@@ -1,0 +1,22 @@
+package day17과제;
+
+public class 약수 {
+//	 int num1;
+//	 int num2;
+//	public 약수(int a,int b) {
+	public static void main(String[] args) {
+		int num1 = 24;
+		int num2 = 30;
+
+		for (int i = 1; i <= num1; i++) {
+				if (num1 % i == 0) {
+					System.out.print(i + ",");
+					}
+		}
+				for (int j = 1; j <= num2; j++) {
+			if (num2 % j == 0) {
+				System.out.println(j + ",");
+			}
+		} 
+	}
+}

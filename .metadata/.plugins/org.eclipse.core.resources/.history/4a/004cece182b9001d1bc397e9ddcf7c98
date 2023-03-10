@@ -1,0 +1,13 @@
+package calendar01;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Zoned08 {
+
+	public static void main(String[] args) {
+		ZonedDateTime seouIDT = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));
+		
+	}
+
+}

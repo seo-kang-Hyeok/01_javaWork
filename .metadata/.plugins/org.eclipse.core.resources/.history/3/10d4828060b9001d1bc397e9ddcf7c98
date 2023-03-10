@@ -1,0 +1,12 @@
+package calendar01;
+
+public class Calendar02 {
+
+	public static void main(String[] args) {
+		//
+		String[] week = {"일", "월", "화", "수","목","금","토"}		
+		
+		
+	}
+
+}

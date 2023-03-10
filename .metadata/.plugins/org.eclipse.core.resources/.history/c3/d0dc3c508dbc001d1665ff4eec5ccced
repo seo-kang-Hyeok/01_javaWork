@@ -1,0 +1,38 @@
+package file01;
+
+import java.io.File;
+import java.io.IOException;
+
+public class File01 {
+	public static void main(String[] args) {//File을 만들어 봅니다.
+		try {
+			// 경로를 지정하지 않고 파일 만들기
+			File f1 = new File("test.txt"); //try catch 해야해
+			f1.createNewFile();   //메소드까지 호출해야만 파일이 만들어짐.
+	
+			//존재하고 있는 폴더에 파일 생성 : 경로 지정
+//			File f2 = new File("D:\\test.txt");//D밑에 test를 만드세요! 
+			File f2 = new File("D:/kher.txt"); //D밑에 test를 만드세요!
+			f2.createNewFile();   //메소드까지 호출해야만 파일이 만들어짐.
+
+			//폴더 만들기
+			File tempfolder = new File("D:/temp");
+			tempfolder.mkdir(); //폴더생성
+			
+			//temp폴더에 test.txt파일 만들기
+			File f3 = new File("D:/temp/test.txt");
+			f3.createNewFile();
+			
+			//파일 존재 유무 묻기
+			System.out.println(f1.exists());
+			System.out.println(new File("ttt.txt").exists());
+			
+			System.out.println(f1.isFile());
+			System.out.println(tempfolder.isFile());
+
+		} catch (IOException e) {
+			e.printStackTrace(); //만들지 못하는 경우가 생길 수 있기 때문에 try catch하라고 구현이 되어있음.
+		}
+		
+	}
+}

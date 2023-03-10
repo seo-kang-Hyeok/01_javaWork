@@ -1,0 +1,43 @@
+package day17과제;
+
+import java.util.Scanner;
+
+public class NumTest{
+	
+	public static void main(String[] args) {
+		Lcm lcm = new Lcm();
+		Divisor div = new Divisor();
+		Gcd gcd = new Gcd();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println(" 실행코드를 입력하세요. : ");
+		int start = sc.nextInt();
+			if(start ==0) {
+				System.out.println("시스템을 종료합니다.");
+				System.exit(0);
+			}	
+		System.out.println("1번 숫자를 입력하세요. : ");
+		int num1 = sc.nextInt();
+		System.out.println(" 2번 숫자를 입력하세요. : ");
+		int num2 = sc.nextInt();
+		
+			switch (start) {
+			case 1: {
+				div.div(num1, num2);
+				System.out.print("입니다.");
+				break;
+			}
+			case 2: {
+				lcm.lcm(num1,num2);
+			}
+			case 3: {
+				gcd.gcd(num1,num2);
+			}
+			System.out.println(num1+" 와 "+ num2 + " 최대공약수 : " + gcd);
+				break;	
+			}
+			
+		}	
+		
+	}
+}

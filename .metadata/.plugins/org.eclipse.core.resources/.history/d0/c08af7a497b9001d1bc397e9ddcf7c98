@@ -1,0 +1,25 @@
+package test02;
+class Person {
+	private String name;
+	private int age;
+	Person() {}
+	Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+//	@Override
+//	public String toString() {
+//		return "이름 : " + name + ", 나이 : " + age;
+//	}
+}
+
+public class prersonTest {
+	public static void main(String[] args) {
+		Person p1 = new Person();
+		Person p2 = new Person("강혁",7);
+		System.out.println(p2.getName());
+	}
+}

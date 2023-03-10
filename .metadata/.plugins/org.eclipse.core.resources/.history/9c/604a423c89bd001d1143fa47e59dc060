@@ -1,0 +1,34 @@
+package collection05.vector01;
+
+public class vector2 {
+
+	public static void main(String[] args) {
+		//매개변수로 어떠한 객체 다 받겠다. 권장하지 않
+		//Vector v = new Vector(); //VectorList = 객체를 넣을 수있는 배열
+		ArrayList v = new ArrayList();		
+		
+		v.add(1);
+		v.add(8.89);
+		v.add("478");
+		v.add(new Integer(8));
+		v.add(new Double(6.89));
+		v.add(new String("kh정보교육원"));
+		
+		Object obj = v.get(0);
+//		int a = v.get(0); 오류발생 . int형이 아니다. Vector에 넣는거 모두 객체로 인식 된다. 기본자료형으로 받을 수 없다.
+		int i = (int)v.get(0); //변환해야함.
+		System.out.println(i);
+		
+		double d = (double)v.get(1);
+		System.out.println(d);
+		
+//		int i3 = (int)v.get(2);
+//		System.out.println(i3*3); //오류발생 String형 객체기때문
+		
+		int i3 = Integer.parseInt((String)v.get(2));  //String형 이였을때는 이렇게 변환 해야 합니다.
+		System.out.println(i3*3); 
+	
+		int i4 = (int)v.get(3);
+		System.out.println(i4);
+	}
+}

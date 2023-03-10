@@ -1,0 +1,23 @@
+package collection.hashSet02;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSet5 {
+
+	public static void main(String[] args) {
+		
+		
+		Object[] arr = {1,4,6,7,3,2,8,9,3,4,5,6,7}; //13개
+		Set set = new HashSet();
+		for(Object i : arr)
+			set.add(i);
+		
+		int[5] ro;
+		for (int i= 1; i <6; i ++) {
+			
+			Math.random(i);
+		}
+		System.out.println("size :" + set.size());
+	}
+}

@@ -1,0 +1,13 @@
+package collection.hashSet02;
+
+import java.util.Set;
+
+public class roto {
+
+	public static void main(String[] args) {
+		
+		
+		Set basket = new Set;
+	}
+
+}

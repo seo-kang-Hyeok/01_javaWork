@@ -1,0 +1,36 @@
+package calendar01;
+
+import java.util.Calendar;
+
+public class Calendar02 {
+
+	public static void main(String[] args) {
+		//요일을 배열을 이용하여 추출하기.
+		//DAY_OF_WEEK - 1~7로 출력 인덱스번호는 0번부터 시작한다.0번 배열을 허수로 채워준다. 혹은 -1 
+		String[] week = {"","일","월","화","수","목","금","토"};		
+		Calendar date = Calendar.getInstance();
+		System.out.println(date.get(Calendar.DAY_OF_WEEK)); 				//6 
+		System.out.println(week[date.get(Calendar.DAY_OF_WEEK)] + "요일");  	//금일요일추출.
+		System.out.println();
+		
+		String[] week1 = {"일","월","화","수","목","금","토"};		
+		Calendar date1 = Calendar.getInstance();
+		System.out.println(date1.get(Calendar.DAY_OF_WEEK));				//6
+		System.out.println(week1[date1.get(Calendar.DAY_OF_WEEK)-1] +"요일");//금일요일추출.
+		System.out.println(date1.get(Calendar.YEAR));						//2023
+		System.out.println();
+		
+		date1.set(2022, 6, 8); 												//date1에 넣는다.
+		System.out.println(date1.get(Calendar.YEAR)+ "년");					//2022년
+		date1.set(2021, 3, 20, 7, 20, 53); 									//년.월(1더해서).일.시.분.초 넣는다.
+		System.out.println(date1.get(Calendar.HOUR)+ "시"); 					//7시
+		System.out.println();
+		
+		date1.set(Calendar.MONDAY, Calendar.DECEMBER); //숫자로 넣으면 월은 1이 빠져 햇갈릴 수가 있으니 명시해서 넣는다.
+		System.out.println((date1.get(Calendar.MONTH) + 1) + "월"); 			//12월
+		date1.set(Calendar.HOUR_OF_DAY, 15);
+		System.out.println(date1.get(Calendar.HOUR_OF_DAY)+"시");			//15시
+		
+	}
+
+}

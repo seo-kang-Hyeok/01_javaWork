@@ -1,0 +1,22 @@
+package messenger;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class ClintProgram {
+
+	public static void main(String[] args) {
+		int port = 3005;
+		// String ip = "192.168.20.64";
+		try {
+			String ip = InetAddress.getLocalHost().getHostAddress();
+			
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}	
+		
+		
+	}
+
+}

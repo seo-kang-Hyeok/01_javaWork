@@ -1,0 +1,13 @@
+package test02;
+class person {
+	privte String name;
+	
+}
+public class prersonTest {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

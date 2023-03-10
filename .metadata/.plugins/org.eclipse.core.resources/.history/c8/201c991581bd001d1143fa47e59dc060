@@ -1,0 +1,7 @@
+package collection05.vector01;
+
+public class StudentAPI {
+	private String name;
+	private int stuNo;
+	
+}

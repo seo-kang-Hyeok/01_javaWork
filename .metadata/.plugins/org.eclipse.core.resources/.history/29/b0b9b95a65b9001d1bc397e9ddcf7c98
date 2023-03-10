@@ -1,0 +1,16 @@
+package calendar01;
+
+import java.util.Calendar;
+
+public class Calendar03 {
+
+	public static void main(String[] args) {
+		Calendar date1 = Calendar.getInstance();
+		
+		
+		
+		
+		
+	}
+
+}

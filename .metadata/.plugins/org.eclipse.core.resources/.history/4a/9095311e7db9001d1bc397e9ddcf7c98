@@ -1,0 +1,31 @@
+package calendar01;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class LocalTime06 {
+
+	public static void main(String[] args) {
+		LocalDateTime today = LocalDateTime.now();
+		System.out.println(today);
+		
+		LocalDateTime startDT = LocalDateTime.of(2023,02,8,9,30,0);
+		LocalDateTime endDT = LocalDateTime.of(2023,07,20,18,20,30);
+		
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd a hh:mm:ss");
+		//내가만들 formatter로 출력.
+		System.out.println("시작일 : " + startDT.format(dtf));
+		System.out.println("종료일 : " + endDT.format(dtf));
+		
+		if(startDT.isBefore(endDT)) {
+			System.out.println("진행 중 입니다.");
+		}else if(startDT.isEqual(endDT)) {
+			System.out.println("종료합니다.");
+		}else if(startDT.isAfter(endDT)) {
+			System.out.println("종료했습니다.");
+			
+			
+		}
+	}
+
+}

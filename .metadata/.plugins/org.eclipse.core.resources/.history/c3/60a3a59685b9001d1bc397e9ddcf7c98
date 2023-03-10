@@ -1,0 +1,35 @@
+package calendar01;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Zoned08 {
+
+	public static void main(String[] args) {
+		ZonedDateTime seoulDT = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));
+		System.out.println(seoulDT);
+	
+		ZonedDateTime londonDT = ZonedDateTime.now(ZoneId.of("Europe/London"));
+		System.out.println(londonDT);
+		
+		ZonedDateTime berlinDT = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+		System.out.println(berlinDT);
+
+		ZonedDateTime NewYorkDT = ZonedDateTime.now(ZoneId.of("America/NewYork"));
+		System.out.println(NewYorkDT);
+		
+		//기준시간
+		ZonedDateTime utc = ZonedDateTime.now(ZoneId.of("UTC")); //표준시간
+		System.out.println(utc);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

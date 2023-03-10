@@ -1,0 +1,16 @@
+package exam;
+
+public class Divisor {
+
+	public static void divisor(int num) {
+		for(int i = 1; i <=num; i++) {
+			if(num % i == 0) {
+				if(num == i)
+					System.out.println(i + ", ");
+				else
+					System.out.println(i + ", ");
+			}
+		}
+		System.out.println();
+	}
+}

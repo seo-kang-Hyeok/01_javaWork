@@ -1,0 +1,18 @@
+package day17과제;
+
+import java.util.Scanner;
+
+public class Lcm {
+	int a;
+	int b;
+	
+		Lcmint min = (a < b) ? a : b;   // 참이면 a이고 아니면 b 인거지.
+		int gcd = 0;
+			for (int i = 1; i <= min; i++) {
+				if (a % i == 0 && b % i == 0)
+					gcd = i;
+	}
+	System.out.println(a+" 와 "+ b + " 의 최소공배수 : " + a * b / gcd);
+
+}
+}

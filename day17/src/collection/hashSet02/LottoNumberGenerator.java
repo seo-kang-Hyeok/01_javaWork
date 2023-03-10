@@ -1,0 +1,19 @@
+package collection.hashSet02;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+public class LottoNumberGenerator {
+    private static final int LOTTO_SIZE = 6; // 로또 번호 갯수
+    private static final int MAX_NUMBER = 45; // 로또 번호 범위
+    private static final Random RANDOM = new Random();
+
+    public static void main(String[] args) {
+        Set<Integer> lottoNumbers = new HashSet<>();
+        while (lottoNumbers.size() < LOTTO_SIZE) {
+            int number = RANDOM.nextInt(MAX_NUMBER) + 1; // 1부터 45 사이의 숫자 생성
+            lottoNumbers.add(number);
+        }
+        System.out.println("추출된 로또 번호: " + lottoNumbers);
+    }
+}

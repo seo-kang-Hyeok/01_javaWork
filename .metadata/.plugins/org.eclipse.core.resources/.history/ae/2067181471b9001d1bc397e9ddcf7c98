@@ -1,0 +1,17 @@
+package calendar01;
+
+import java.time.LocalDateTime;
+
+public class LocalTime06 {
+
+	public static void main(String[] args) {
+		LocalDateTime today = LocalDateTime.now();
+		System.out.println(today);
+		
+		LocalDateTime startDT = LocalDateTime.of(2023,02,08,09,30, )
+		LocalDateTime endDT = LocalDateTime.of(2023,07,20,18,20,30);
+		
+		
+	}
+
+}

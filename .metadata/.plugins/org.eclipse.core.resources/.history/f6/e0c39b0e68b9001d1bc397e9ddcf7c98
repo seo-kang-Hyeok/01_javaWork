@@ -1,0 +1,20 @@
+package calendar01;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Date04 {
+
+	public static void main(String[] args) {
+		Date now = new Date();
+		System.out.println(now.toString());  //Fri Mar 03 11:03:58 KST 2023
+		
+		//SimpleDateFormat
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+		System.out.println(sdf.format(now));  //2023-03-03 11:03 - 원하는 데이터를 추출.
+		
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy/MM/dd");
+		System.out.println(sdf2.format(now));
+	}
+
+}

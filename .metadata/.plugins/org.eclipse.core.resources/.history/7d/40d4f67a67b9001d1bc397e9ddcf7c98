@@ -1,0 +1,17 @@
+package calendar01;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Date04 {
+
+	public static void main(String[] args) {
+		Date now = new Date();
+		System.out.println(now.toString());
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+	
+		
+	}
+
+}

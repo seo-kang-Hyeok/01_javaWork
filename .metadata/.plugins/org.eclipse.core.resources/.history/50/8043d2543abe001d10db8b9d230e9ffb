@@ -1,0 +1,11 @@
+package day17과제;
+
+public class hh {
+
+	public static void main(String[] args) {
+
+		int num =5/1;
+		System.out.println(num);
+	}
+
+}

@@ -1,0 +1,42 @@
+package day17과제;
+import java.util.Scanner;
+
+public class NumTest{
+	
+	public static void main(String[] args) {
+		Lcm lcm = new Lcm();
+		Divisor div = new Divisor();
+		Gcd gcd = new Gcd();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println(" 실행코드를 입력하세요.1:약수 2:최소공배수 3.최대공약수 0.종료 ");
+		String start = sc.next();
+		
+		switch (start) {
+		case 0: {
+			
+			yield type;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + start);
+		}
+		while (start != "0") {
+			
+			if(start == "1") {
+				div.div();
+			}	
+			if(start == "2") {
+				lcm.lcm();
+			}	
+			if(start == "3") {
+				gcd.gcd();
+			}	
+			if(start == "0") {
+				break;
+			}
+			System.out.println("실행코드를 입력하세요.1:약수 2:최소공배수 3.최대공약수 0.종료");
+			start = sc.next();
+		}
+		System.out.println("시스템을 종료합니다.");
+	}
+}

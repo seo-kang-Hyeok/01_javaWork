@@ -1,0 +1,19 @@
+package collection05.vector01;
+
+import java.util.*;
+
+public class vector1 {
+
+	public static void main(String[] args) {
+		Vector vector = new Vector(); //조상은 List 전부 List에 넣을 수 있습니다.
+		ArrayList a1 = new ArrayList();
+
+		List<Student> vlisrt = new Vector(); //특정 자료형만 넣고 싶을 땐 <>표시
+		List alist = new ArrayList(); 
+		
+		Student student = new Student("홍길동", 8);
+		
+		
+		
+	}
+}

@@ -1,0 +1,31 @@
+package calendar01;
+
+import java.util.Calendar;
+
+public class Calendar02 {
+
+	public static void main(String[] args) {
+		//요일을 배열을 이용하여 추출하기.
+		//DAY_OF_WEEK - 1~7로 출력 인덱스번호는 0번부터 시작한다.0번 배열을 허수로 채워준다. 혹은 -1 
+		String[] week = {"","일","월","화","수","목","금","토"};		
+		Calendar date = Calendar.getInstance();
+		System.out.println(date.get(Calendar.DAY_OF_WEEK));
+		System.out.println(week[date.get(Calendar.DAY_OF_WEEK)] + "요일");  //요일추출됨.
+		
+		String[] week1 = {"일","월","화","수","목","금","토"};		
+		Calendar date1 = Calendar.getInstance();
+		System.out.println(date1.get(Calendar.DAY_OF_WEEK));
+		System.out.println(week1[date1.get(Calendar.DAY_OF_WEEK)-1] + "요일");
+		System.out.println(date1.get(Calendar.YEAR));
+		
+		date1.set(2022, 6, 8); 						//date1에 넣는다.
+		System.out.println(date1.get(Calendar.YEAR));
+		date1.set(2021, 3, 20, 7, 20, 53); 		//년.월.일.시.분.초 넣는다.
+		System.out.println(date1.get(Calendar.HOUR));
+		
+		date1.set(Calendar.MONDAY, Calendar.DECEMBER); 
+		System.out.println(date1.get(Calendar.MONTH) + 1);
+		
+	}
+
+}

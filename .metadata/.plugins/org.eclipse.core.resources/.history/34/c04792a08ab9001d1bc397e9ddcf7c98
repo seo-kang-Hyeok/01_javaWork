@@ -1,0 +1,5 @@
+package test02;
+
+public class Fusiondata {
+	Student[] fusionStudent = new Student[28];
+}
